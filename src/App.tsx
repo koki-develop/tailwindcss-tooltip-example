@@ -3,9 +3,15 @@ import React, { memo } from "react";
 const App: React.FC = memo(() => {
   return (
     <div className="flex min-h-screen items-center justify-center">
-      <button className="rounded border bg-white px-2 py-1 shadow transition hover:bg-gray-100">
-        Button
-      </button>
+      <span className="relative">
+        <span className="rounded bg-black px-2 py-1 text-white">
+          Hello World
+        </span>
+
+        <button className="rounded border bg-white px-2 py-1 shadow transition hover:bg-gray-100">
+          Button
+        </button>
+      </span>
     </div>
   );
 });
